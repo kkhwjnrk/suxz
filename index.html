@@ -1,283 +1,107 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suxz</title>
+  <meta name="title" content="Suxz - Online Learning Platform">
+  <meta name="description" content="The best Online Learning Platform ever">
 
-  <link rel="shortcut icon" href="images/brand-icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
+  <title>Suxz - Online Learning Platform</title>
+
+  <link rel="shortcut icon" href="images/brand-icon.svg" type="image/x-icon">
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="header container">
-    <nav class="nav">
+  <header class="header" id="header">
+    <div class="container">
+
       <a href="/" class="logo">
-        <img src="images/brand-icon.svg" alt="" class="brand-logo">
-        <span>Suxz</span>
+        <img src="images/logo.png" alt="logo">
       </a>
 
-      <button class="btn-toggle" data-toggle="false">
+      <nav class="navbar" id="navbar">
+
+        <div class="navbar-top">
+          <a href="/" class="logo">
+            <img src="images/logo.png" alt="logo">
+          </a>
+
+          <button class="navbar-toggle" aria-label="close-menu" data-toggle>
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link active">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Learning</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">About Us</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Testimonial</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-action">
+          <a href="#" class="login-btn">Log In</a>
+
+          <button class="btn btn-primary">Sign Up</button>
+        </div>
+
+      </nav>
+
+      <button class="navbar-toggle" aria-label="open-menu" data-toggle>
         <i class="bx bx-menu-alt-right"></i>
       </button>
 
-      <div class="nav-menu">
-        <ul>
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#learning" class="nav-link">Learning</a></li>
-          <li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="#testimonial" class="nav-link">Testimonial</a></li>
-        </ul>
-
-        <div class="nav-action">
-          <button class="btn btn-alt">Log In</button>
-          <button class="btn btn-primary">Sign Up</button>
-        </div>
-      </div>
-
-    </nav>
+      <div class="overlay" id="overlay" data-toggle></div>
+    </div>
   </header>
 
   <main>
-    <section class="hero col container" id="home">
-      <article class="content-title">
-        <span class="badge">suxz make it easy</span>
-        <h1 class="heading">find your way of success</h1>
-        <p class="text">We help you to increase self-confidence and train yourself in a direction, and make you more
-          creative in developing a work</p>
-        <div class="cta-btn">
-          <button class="btn btn-secondary">Get Started</button>
-          <button class="btn btn-alt">Our Service</button>
-        </div>
-      </article>
 
-      <figure class="content-img">
-        <img src="images/hero-img.png" alt="owner suxz">
-      </figure>
-    </section>
+    <section class="section hero">
+      <div class="container col-2">
 
-    <section class="learning container" id="learning">
-      <article class="content-title">
-        <span class="badge">learnings</span>
-        <h2 class="sub-heading">online learning platform international curriculum</h2>
-        <p class="text">We help you to increase self-confidence and train yourself in a direction, and make you more
-          creative in developing a work</p>
-      </article>
+        <article class="hero-content">
+          <span class="badge">suxz make it easy</span>
 
-      <div class="card-container">
-        <article class="card card-learning">
-          <figure class="card-img">
-            <img src="images/illustration-1.svg" alt="">
-          </figure>
-          <div class="card-content">
-            <h3 class="small-heading">Starter</h3>
-            <p>Free class access for that start learning code and design</p>
+          <h1 class="title">find your way of success</h1>
+
+          <p class="text">We help you to increase self-confidence and train yourself in a direction, and make you more
+            creative in developing a work</p>
+
+          <div class="action-btn">
+            <button class="btn btn-secondary" aria-label="get started">Get Started</button>
+
+            <button class="btn btn-tertiary" aria-label="our service">Our Service</button>
           </div>
-          <button class="btn btn-secondary">See Class</button>
-        </article>
-        <article class="card card-learning">
-          <figure class="card-img">
-            <img src="images/illustration-2.svg" alt="">
-          </figure>
-          <div class="card-content">
-            <h3 class="small-heading">Premium</h3>
-            <p>Advanced material from the Starter & learn to build projects</p>
-          </div>
-          <button class="btn btn-secondary">See Class</button>
         </article>
 
-        <article class="card card-learning">
-          <figure class="card-img">
-            <img src="images/illustration-3.svg" alt="">
-          </figure>
-          <div class="card-content">
-            <h3 class="small-heading">Superstar</h3>
-            <p>Materials for experts who have completed the premium package</p>
-          </div>
-          <button class="btn btn-secondary">See Class</button>
-        </article>
+        <figure class="hero-img">
+          <img src="images/hero-img.png" alt="hero image" class="w-100">
+        </figure>
 
-        <article class="card card-learning">
-          <figure class="card-img">
-            <img src="images/illustration-4.svg" alt="">
-          </figure>
-          <div class="card-content">
-            <h3 class="small-heading">Bootcamp</h3>
-            <p>Informatics science training program with the latest material</p>
-          </div>
-          <button class="btn btn-secondary">See Class</button>
-        </article>
-      </div>
       </div>
     </section>
 
-    <section class="about col container" id="about-us">
-      <figure class="about-img">
-        <img src="images/about-img.png" alt="two women who are studying">
-      </figure>
-
-      <article class="about-content">
-        <span class="badge">about us</span>
-        <h2 class="sub-heading">we help improve your work experience</h2>
-        <p class="text">We help you to increase self-confidence and train yourself in a direction.</p>
-
-        <ul class="offering-list">
-          <li class="offering-item">Study and produce creation to get a job</li>
-          <li class="offering-item">Up to date material and created by expert creators</li>
-          <li class="offering-item">Complete classes and projects and get a certificate from us</li>
-        </ul>
-      </article>
-    </section>
-
-    <section class="companies section col-1 container">
-      <article class="content-title">
-        <h2 class="sub-heading">companies that recruiter our graduates</h2>
-        <p class="text">Our graduates have worked in more than 400 companies around the World</p>
-      </article>
-      <ul class="company-list">
-        <li class="company-item">
-          <img src="images/logo-github.svg" alt="github">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-microsoft.svg" alt="microsoft">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-redis.svg" alt="redis">
-        </li>
-        <li class="company-item">
-          <img src="/images/logo-amazon.svg" alt="amazon">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-paypal.svg" alt="paypal">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-linkedin.svg" alt="linkedin">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-reddit.svg" alt="reddit">
-        </li>
-        <li class="company-item">
-          <img src="images/logo-medium.svg" alt="logo-medium">
-        </li>
-      </ul>
-    </section>
-
-    <section class="testimonial container" id="testimonial">
-      <article class="content-title">
-        <span class="badge">testimonial</span>
-        <h2 class="sub-heading">our alumni says</h2>
-        <p class="text">These are the words of people who have taken our class</p>
-      </article>
-
-      <div class="card-container">
-        <article class="card card-testimonial">
-          <div class="card-content">
-            <img src="images/profile-1.jpg" alt="jason todd" class="profile-img">
-            <h3 class="small-heading">Jason Todd</h3>
-            <span class="title">Enterpreneur</span>
-            <p>“The mentor is cool, how to convey each material is also detailed and easy to understand..”</p>
-          </div>
-        </article>
-
-        <article class="card card-testimonial">
-          <div class="card-content">
-            <img src="images/profile-2.jpg" alt="cassandra k" class="profile-img">
-            <h3 class="small-heading">Cassandra K</h3>
-            <span class="title">Web Developer</span>
-            <p>“The mentor is cool, how to convey each material is also detailed and easy to understand..”</p>
-          </div>
-        </article>
-
-        <article class="card card-testimonial">
-          <div class="card-content">
-            <img src="images/profile-3.jpg" alt="petter parker" class="profile-img">
-            <h3 class="small-heading">Petter Parker</h3>
-            <span class="title">PHP Enthusiast</span>
-            <p>“The mentor is cool, how to convey each material is also detailed and easy to understand..”</p>
-          </div>
-        </article>
-
-        <article class="card card-testimonial">
-          <div class="card-content">
-            <img src="images/profile-4.jpg" alt="jean gray" class="profile-img">
-            <h3 class="small-heading">Jean Gray</h3>
-            <span class="title">Designer</span>
-            <p>“The mentor is cool, how to convey each material is also detailed and easy to understand..”</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="cta container">
-      <article class="content-title">
-        <h2 class="sub-heading">so what are you waiting</h2>
-        <p class="text">It's time to build your career, study in a relaxed and purposeful manner</p>
-
-        <div class="cta-btn">
-          <button class="btn btn-secondary">Get Started</button>
-          <button class="btn btn-alt">Contact Us</button>
-        </div>
-      </article>
-    </section>
   </main>
-
-  <footer class="footer container">
-    <nav class="footer-menu">
-      <div class="footer-info">
-        <a href="/" class="logo">
-          <img src="images/brand-icon.svg" alt="" class="brand-logo">
-          <span>Suxz</span>
-        </a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo rerum suscipit laboriosam. Fugit, nemo. Minus,
-          accusantium. Tempore!</p>
-      </div>
-
-      <ul>
-        <li class="footer-list"><span class="small-heading">Company</span></li>
-        <li class="footer-list"><a href="#" class="nav-link">Home</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">Blogs</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">Careers</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">Portfolios</a></li>
-      </ul>
-
-      <ul>
-        <li class="footer-list"><span class="small-heading">Links</span></li>
-        <li class="footer-list"><a href="#" class="nav-link">Privacy & Policy</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">Github</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">Supports</a></li>
-        <li class="footer-list"><a href="#" class="nav-link">FAQs</a></li>
-      </ul>
-
-      <ul>
-        <li class="footer-list"><span class="small-heading">Contact</span></li>
-        <li class="footer-list">
-          <a href="#" class="footer-link">
-            <i class="bx bx-phone-call"></i>
-            <span>(021) 31048184</span>
-          </a>
-        </li>
-        <li class="footer-list">
-          <a href="#" class="footer-link">
-            <i class="bx bx-envelope"></i>
-            <span>official@suxz.com</span>
-          </a>
-        </li>
-        <li class="footer-list address">
-          <i class="bx bx-map"></i>
-          <span>Jl. Ciledug Raya No. 123, Kota Tangerang, 15155</span>
-        </li>
-      </ul>
-    </nav>
-
-    <p class="copyright">Suxz &#169; 2023 All Rights Reserved</p>
-  </footer>
 
   <script src="main.js"></script>
 </body>
