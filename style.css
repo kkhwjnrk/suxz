@@ -172,6 +172,9 @@ body {
 .action-btn {
   display: flex;
   flex-wrap: wrap;
+  -webkit-gap: .75rem 1.25rem;
+  -moz-gap: .75rem 1.25rem;
+  -ms-gap: .75rem 1.25rem;
   gap: .75rem 1.25rem;
 }
 
