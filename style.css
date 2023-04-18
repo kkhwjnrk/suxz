@@ -200,11 +200,6 @@ body {
   transition: .3s ease;
 }
 
-.card:is(:hover, :focus-visible) {
-  background-color: var(--primary-clr);
-  color: var(--white-clr);
-}
-
 
 /*--------------------*\
   HEADER
@@ -385,6 +380,11 @@ body {
   width: 5rem;
 }
 
+.card-learning:is(:hover, :focus-visible) {
+  background-color: var(--primary-clr);
+  color: var(--white-clr);
+}
+
 
 
 
@@ -393,6 +393,25 @@ body {
 \*--------------------*/
 .about {
   row-gap: 0;
+}
+
+.offering-list {
+  font-size: 1.125rem;
+  margin-top: 2.5rem;
+}
+
+.offering-item {
+  display: flex;
+  align-items: center;
+}
+
+.offering-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.offering-item::before {
+  content: url(images/check.svg);
+  margin-right: 1rem;
 }
 
 
@@ -455,14 +474,29 @@ body {
 /*--------------------*\
   CTA
 \*--------------------*/
+.cta {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--text-clr);
+  color: var(--white-clr);
+  text-align: center;
+}
 
+.cta .action-btn {
+  justify-content: center;
+  align-items: center;
+}
 
+.contact-btn {
+  font-size: 1.25rem;
+  font-weight: var(--fw-semi-bold);
+  transition: opacity .3s ease;
+}
 
-
-
-/*--------------------*\
-  COMPANIES
-\*--------------------*/
+.contact-btn:is(:hover, :focus-visible) {
+  opacity: .8;
+}
 
 
 
@@ -471,3 +505,58 @@ body {
 /*--------------------*\
   FOOTER
 \*--------------------*/
+.footer-top {
+  display: grid;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.footer-text {
+  font-size: 1.125rem;
+  margin-top: .75rem;
+}
+
+.footer-list:not(:last-child) {
+  margin-bottom: .75rem;
+  display: block;
+}
+
+.footer-item-title {
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.footer-link {
+  font-size: 1.25rem;
+  font-weight: var(--fw-medium);
+}
+
+.footer-link:is(:hover, :focus-visible) {
+  text-decoration: underline;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: var(--fw-medium);
+}
+
+.contact-item .bx {
+  font-size: 1.5rem;
+  margin-right: .75rem;
+}
+
+.contact-item:is(a) {
+  color: var(--primary-clr);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0 2.5rem;
+  border-top: 1px solid var(--gray-clr);
+}
+
+.profile-link {
+  font-weight: var(--fw-medium);
+}
