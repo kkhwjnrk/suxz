@@ -22,85 +22,93 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <div class="container">
+  <header class="header container" id="header">
+    <a href="/" class="logo">
+      <img src="images/brand-icon.svg" alt="logo" class="brand-logo">
+      <span>Suxz</span>
+    </a>
 
-      <a href="/" class="logo">
-        <img src="images/logo.png" alt="logo">
-      </a>
+    <nav class="navbar" id="navbar">
 
-      <nav class="navbar" id="navbar">
+      <div class="navbar-top">
+        <a href="/" class="logo">
+          <img src="images/brand-icon.svg" alt="logo" class="brand-logo">
+          <span>Suxz</span>
+        </a>
 
-        <div class="navbar-top">
-          <a href="/" class="logo">
-            <img src="images/logo.png" alt="logo">
-          </a>
+        <button class="navbar-toggle" aria-label="close-menu" data-toggle>
+          <i class="bx bx-x"></i>
+        </button>
+      </div>
 
-          <button class="navbar-toggle" aria-label="close-menu" data-toggle>
-            <i class="bx bx-x"></i>
-          </button>
-        </div>
+      <ul class="navbar-list">
 
-        <ul class="navbar-list">
+        <li class="navbar-item">
+          <a href="#" class="navbar-link active">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">Learning</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">About Us</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#" class="navbar-link">Testimonial</a>
+        </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link active">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Learning</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">About Us</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">Testimonial</a>
-          </li>
+      </ul>
 
-        </ul>
+      <div class="navbar-action">
+        <a href="#" class="login-btn">Log In</a>
 
-        <div class="navbar-action">
-          <a href="#" class="login-btn">Log In</a>
+        <button class="btn btn-primary">Sign Up</button>
+      </div>
 
-          <button class="btn btn-primary">Sign Up</button>
-        </div>
+    </nav>
 
-      </nav>
+    <button class="navbar-toggle" aria-label="open-menu" data-toggle>
+      <i class="bx bx-menu-alt-right"></i>
+    </button>
 
-      <button class="navbar-toggle" aria-label="open-menu" data-toggle>
-        <i class="bx bx-menu-alt-right"></i>
-      </button>
-
-      <div class="overlay" id="overlay" data-toggle></div>
-    </div>
+    <div class="overlay" id="overlay" data-toggle></div>
   </header>
 
   <main>
 
-    <section class="section hero">
-      <div class="container col-2">
+    <section class="section hero container col-2">
+      <article class="section-content">
+        <span class="badge">suxz make it easy</span>
 
-        <article class="hero-content">
-          <span class="badge">suxz make it easy</span>
+        <h1 class="title">find your way of success</h1>
 
-          <h1 class="title">find your way of success</h1>
+        <p class="text">We help you to increase self-confidence and train yourself in a direction, and make you more
+          creative in developing a work</p>
 
-          <p class="text">We help you to increase self-confidence and train yourself in a direction, and make you more
-            creative in developing a work</p>
+        <div class="action-btn">
+          <button class="btn btn-secondary" aria-label="get started">Get Started</button>
 
-          <div class="action-btn">
-            <button class="btn btn-secondary" aria-label="get started">Get Started</button>
+          <button class="btn btn-tertiary" aria-label="our service">Our Service</button>
+        </div>
+      </article>
 
-            <button class="btn btn-tertiary" aria-label="our service">Our Service</button>
-          </div>
-        </article>
-
-        <figure class="hero-img">
-          <img src="images/hero-img.png" alt="hero image" class="w-100">
-        </figure>
-
-      </div>
+      <figure class="section-img">
+        <img src="images/hero-img.png" alt="hero image" class="w-100">
+      </figure>
     </section>
 
+    <section class="section about container col-2">
+      <figure class="section-img">
+        <img src="images/about-img.png" alt="about image" class="w-100">
+      </figure>
+
+      <article class="section-content">
+        <span class="badge">about us</span>
+
+        <h2 class="sub-title">we help improve your work experience</h2>
+
+        <p class="text">We help you to increase self-confidence and train yourself in a direction.</p>
+      </article>
+    </section>
   </main>
 
   <script src="main.js"></script>

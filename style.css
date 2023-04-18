@@ -65,6 +65,7 @@ body {
   line-height: 1.5;
   background-color: white;
   color: var(--text-clr);
+  min-height: 200vh;
 }
 
 .nav-active {
@@ -85,9 +86,6 @@ body {
 }
 
 .btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.25rem;
   font-weight: var(--fw-semi-bold);
   padding: .5rem 1.75rem;
@@ -180,7 +178,6 @@ body {
 }
 
 
-
 /*--------------------*\
   HEADER
 \*--------------------*/
@@ -188,17 +185,14 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: var(--white-clr);
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   z-index: 4;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .header.active {
@@ -226,6 +220,17 @@ body {
   100% {
     transform: translateY(0%);
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: var(--fw-semi-bold);
+}
+
+.logo img {
+  margin-right: .5rem;
 }
 
 .navbar-toggle .bx {
@@ -339,7 +344,7 @@ body {
 /*--------------------*\
   HERO
 \*--------------------*/
-.hero-img {
+.hero .section-img {
   grid-row: 1;
 }
 
@@ -356,7 +361,9 @@ body {
 /*--------------------*\
   ABOUT US
 \*--------------------*/
-
+.about {
+  row-gap: 0;
+}
 
 
 
