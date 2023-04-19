@@ -176,9 +176,9 @@ body {
 }
 
 .action-btn {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .75rem 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, max-content));
+  gap: 1rem 1.25rem;
   margin-top: 2rem;
 }
 
@@ -438,12 +438,12 @@ body {
 /*--------------------*\
   TESTIMONIAL
 \*--------------------*/
-.testimonial {
-  gap: 5rem;
-}
-
 .testimonial .card-container {
-  gap: 4rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 90%;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 2.5rem .5rem .5rem;
 }
 
 .card-testimonial {
